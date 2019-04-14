@@ -1,18 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project was build from scss.
 
-## Modules installed
-Bootstrap    | $ npm install bootstrap
-FontAwesome  | $ npm i --save @fortawesome/fontawesome-svg-core
-               $ npm i --save @fortawesome/free-solid-svg-icons
-               $ npm i --save @fortawesome/react-fontawesome
-ProtoType    | $ npm i prop-types@15.6.2
-Router Dom   | $ npm install --save react-router-dom
-Loddash      | $ npm i lodash@4.17.10
-Joi Browser  | $ npm install joi-browser
-Schema       | $ npm install react-jsonschema-form --save
-Search Input | $ npm install react-search-input --save
-
+## Modules installed<br>
+Bootstrap    | $ npm install bootstrap<br>
+FontAwesome  | $ npm i --save @fortawesome/fontawesome-svg-core<br>
+               $ npm i --save @fortawesome/free-solid-svg-icons<br>
+               $ npm i --save @fortawesome/react-fontawesome<br>
+ProtoType    | $ npm i prop-types@15.6.2<br>
+Router Dom   | $ npm install --save react-router-dom<br>
+Loddash      | $ npm i lodash@4.17.10<br>
+Joi Browser  | $ npm install joi-browser<br>
+Schema       | $ npm install react-jsonschema-form --save<br>
+Search Input | $ npm install react-search-input --save<br>
+<br>
 
 ## Available Scripts
 
