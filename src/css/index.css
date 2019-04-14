@@ -1,0 +1,290 @@
+body {
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+h2 {
+  font-size: 20px;
+  font-weight: bold; }
+
+.albumsList {
+  margin-top: 20px; }
+  .albumsList .heading-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #d6d6d6; }
+    .albumsList .heading-title h2 {
+      padding: 5px 0; }
+    .albumsList .heading-title ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 3px; }
+    .albumsList .heading-title li {
+      margin-left: 10px; }
+      .albumsList .heading-title li svg {
+        cursor: pointer; }
+      .albumsList .heading-title li path {
+        color: #d6d6d6; }
+    .albumsList .heading-title .active path {
+      color: #3b8ec2; }
+  .albumsList .heading-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5px; }
+    .albumsList .heading-view p {
+      padding: 6px 6px 6px 0; }
+    .albumsList .heading-view .list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .albumsList .heading-view .list .form-group {
+        margin-bottom: 0; }
+      .albumsList .heading-view .list select {
+        overflow: hidden;
+        height: 29px;
+        width: 117px;
+        padding-left: 10px;
+        color: #fff;
+        background: url("/img/view_select_bg.png") no-repeat 90% 0;
+        background-color: #3b8ec2;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 2px;
+        -o-text-overflow: "";
+        text-overflow: ""; }
+        .albumsList .heading-view .list select:active {
+          outline-color: transparent; }
+        .albumsList .heading-view .list select:hover {
+          outline: none; }
+  .albumsList .albums ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .albumsList .albums ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .albumsList .albums ul .grid {
+      float: left;
+      margin-right: 5%;
+      margin-bottom: 5%;
+      width: 21.25%;
+      position: relative;
+      padding-bottom: 25px;
+      border: 1px solid transparent; }
+      .albumsList .albums ul .grid:nth-child(4n) {
+        margin-right: 0; }
+      .albumsList .albums ul .grid:hover {
+        border: 1px solid #d6d6d6; }
+      .albumsList .albums ul .grid a {
+        display: block;
+        text-decoration: none; }
+        .albumsList .albums ul .grid a:hover {
+          color: #3b8ec2; }
+      .albumsList .albums ul .grid img {
+        width: 100%;
+        margin-bottom: 4px; }
+      .albumsList .albums ul .grid span {
+        display: block; }
+      .albumsList .albums ul .grid .item {
+        padding: 5%; }
+      .albumsList .albums ul .grid .label {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #d6d6d6; }
+      .albumsList .albums ul .grid .title {
+        text-transform: lowercase;
+        font-weight: 600; }
+        .albumsList .albums ul .grid .title:first-letter {
+          text-transform: uppercase; }
+      .albumsList .albums ul .grid .artist {
+        color: #4c4c4c; }
+      .albumsList .albums ul .grid .price {
+        padding: 5px;
+        text-align: right;
+        color: #820000;
+        font-size: 14px; }
+      .albumsList .albums ul .grid .buy {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 3px;
+        background-color: #d6d6d6;
+        color: #000;
+        text-align: center; }
+      .albumsList .albums ul .grid:hover .buy {
+        display: block; }
+    .albumsList .albums ul .list {
+      padding: 2%;
+      width: 100%; }
+      .albumsList .albums ul .list:nth-child(odd) {
+        background: #f7f7f7; }
+      .albumsList .albums ul .list a:after {
+        content: "";
+        display: block;
+        clear: both; }
+      .albumsList .albums ul .list span {
+        display: block; }
+      .albumsList .albums ul .list img {
+        width: 100%; }
+      .albumsList .albums ul .list .pic {
+        float: left;
+        width: 10%; }
+      .albumsList .albums ul .list .label {
+        float: right;
+        width: 85%; }
+      .albumsList .albums ul .list .title {
+        text-transform: lowercase;
+        font-weight: 600; }
+        .albumsList .albums ul .list .title:first-letter {
+          text-transform: uppercase; }
+      .albumsList .albums ul .list .artist {
+        color: #4c4c4c; }
+      .albumsList .albums ul .list .price {
+        padding: 5px;
+        text-align: right;
+        color: #820000;
+        font-size: 14px; }
+  .albumsList .pagination {
+    margin-bottom: 10px; }
+    .albumsList .pagination nav {
+      margin: auto; }
+    .albumsList .pagination .page-link {
+      border: none;
+      font-size: 14px; }
+      .albumsList .pagination .page-link:last-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+      .albumsList .pagination .page-link:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
+      .albumsList .pagination .page-link:hover {
+        background-color: transparent;
+        border-bottom: 3px solid #e9ecef; }
+    .albumsList .pagination .active .page-link {
+      color: #007bff;
+      font-weight: bold;
+      background-color: transparent;
+      border-bottom: 3px solid #007bff; }
+
+.search-area {
+  margin-top: 20px; }
+  .search-area h2 {
+    padding: 6px 0; }
+  .search-area input {
+    font-size: 14px; }
+
+.category-area h2 {
+  padding: 6px 0; }
+
+.category-area li {
+  padding: 3px;
+  cursor: pointer; }
+  .category-area li:hover {
+    color: #3b8ec2; }
+  .category-area li:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 5px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid black; }
+
+.category-area .active {
+  color: #3b8ec2;
+  font-weight: 600; }
+  .category-area .active:before {
+    border-left: 4px solid #3b8ec2; }
+
+header {
+  padding: 10px;
+  background: rgba(45, 45, 45, 0.98); }
+  header a {
+    color: #fff;
+    text-decoration: none; }
+    header a:visited {
+      text-decoration: none; }
+    header a:link {
+      text-decoration: none; }
+    header a:hover {
+      color: #fff; }
+
+footer {
+  padding: 10px;
+  background: #f2f2f2;
+  text-align: right; }
+
+@media (min-width: 425px) and (max-width: 767px) {
+  body {
+    font-size: 12px; }
+  h2 {
+    font-size: 18px; }
+  .albumsList .albums ul .grid {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 30%; }
+    .albumsList .albums ul .grid:nth-child(3n) {
+      margin-right: 0; }
+    .albumsList .albums ul .grid:nth-child(4n) {
+      margin-right: 5%; }
+  .albumsList .pagination .page-link {
+    font-size: 11px; }
+  .page-link {
+    padding: 0.3rem 0.55rem; }
+  .category-area ul:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .category-area ul li {
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 49.5%; }
+    .category-area ul li:nth-child(2n) {
+      margin-right: 0; } }
+
+@media only screen and (max-width: 424px) {
+  .albumsList .albums ul .grid {
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 47.5%; }
+    .albumsList .albums ul .grid:nth-child(2n) {
+      margin-right: 0; }
+  .pagination {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .category-area ul:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .category-area ul li {
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 49.5%; }
+    .category-area ul li:nth-child(2n) {
+      margin-right: 0; } }
